@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="institution-name"></h1>
+        <p><strong>Motto:</strong> <span id="institution-motto"></span></p>
+    </header>
+    <section>
+        <h2>About Us</h2>
+        <p><strong>Description:</strong> <span id="institution-description"></span></p>
+        <p><strong>Type:</strong> <span id="institution-type"></span></p>
+    </section>
+    <section>
+        <h2>Notice Board</h2>
+        <p id="notice-board"></p>
+    </section>
+
+    <script>
+        // Retrieve data from localStorage
+        const institutionName = localStorage.getItem("institutionName");
+        const institutionType = localStorage.getItem("institutionType");
+        const institutionDescription = localStorage.getItem("institutionDescription");
+        const institutionMotto = localStorage.getItem("institutionMotto");
+        const noticeBoard = localStorage.getItem("noticeBoard");
+
+        // Populate the display elements
+        document.getElementById("institution-name").textContent = institutionName;
+        document.getElementById("institution-type").textContent = institutionType;
+        document.getElementById("institution-description").textContent = institutionDescription;
+        document.getElementById("institution-motto").textContent = institutionMotto;
+        document.getElementById("notice-board").textContent = noticeBoard;
+    </script>
+</body>
+</html>

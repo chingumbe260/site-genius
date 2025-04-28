@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBuilder - Staff Members</title>
+    <link rel="stylesheet" href="WebBuilder.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <form id="staff-form">
+        <!-- Staff Section -->
+        <h3>Staff Members</h3>
+        <label for="staff-name">Name of staff member:</label>
+        <input type="text" id="staff-name" name="staffName" required>
+        <br>
+
+        <label for="staff-picture">Picture of staff member:</label>
+        <input type="file" id="staff-picture" name="staffPicture" accept="image/*">
+        <br>
+        <button type="button" onclick="addStaff()">Add Staff Member</button>
+        <br>
+
+        <!-- Submission -->
+        <h2>Well done! Your website is now ready. Building will finish within a few minutes!</h2>
+        <button type="submit">Done!</button>
+    </form>
+
+    <script src="WebBuilder5.js"></script> <!-- External JavaScript file -->
+</body>
+</html>

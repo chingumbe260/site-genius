@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBuilder - Contact Information</title>
+    <link rel="stylesheet" href="WebBuilder.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <form id="contacts-form">
+        <!-- Contact Information -->
+        <p>Contact Number</p>
+        <input type="number" name="contactNumber" required>
+        <p>Click the button below to add more contacts</p>
+        <button type="button" onclick="addContact()">Add Contact</button>
+        <br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <h3>School Media Pages Links</h3>
+        <label for="facebook">Facebook:</label>
+        <input type="url" id="facebook" name="facebook" placeholder="Enter Facebook URL" required>
+        <br>
+        <label for="instagram">Instagram:</label>
+        <input type="url" id="instagram" name="instagram" placeholder="Enter Instagram URL" required>
+        <br>
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="url" id="whatsapp" name="whatsapp" placeholder="Enter WhatsApp URL" required>
+        <br>
+
+        <button type="submit">Next: Add Staff Members</button>
+    </form>
+
+    <script src="WebBuilder4.js"></script> <!-- External JavaScript file -->
+</body>
+</html>

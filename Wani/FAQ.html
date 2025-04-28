@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="C:\Users\Chingumbe\OneDrive\Desktop\FAQ\FAQ.css">
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions (FAQ)</h1>
+    </header>
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    What services do you offer? <span class="toggle-icon">&gt;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We offer website building, 15-minute online tech consultations, and specialized services for educational institutions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I book a consultation? <span class="toggle-icon">&gt;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can book a consultation by visiting our contact page and selecting an available time for your 15-minute session.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How long does it take to build a website? <span class="toggle-icon">&gt;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>It depends on the complexity of the project. Basic websites can take a couple of minutes, while larger projects may take a couple of hours.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What industries do you specialize in? <span class="toggle-icon">&gt;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We primarily focus on building websites for colleges and educational institutions, but we also work with businesses across various industries.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I contact support? <span class="toggle-icon">&gt;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can reach our support team via email at <a href="mailto:support@wanischoolsystem.com">support@wanischoolsystem.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+
+                const icon = question.querySelector('.toggle-icon');
+                if (answer.classList.contains('active')) {
+                    icon.innerHTML = '&#9660;';  // Rotate down (v) when expanded
+                } else {
+                    icon.innerHTML = '&#9654;';  // Arrow right (>) when collapsed
+                }
+            });
+        });
+    </script>
+</body>
+</html>

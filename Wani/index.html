@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">       
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</head>
+<body onload="welcomePopup()"> <!-- Triggers the welcome pop-up when the page loads -->
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+               <h1>Wani School System</h1>
+            </div>
+                <ul class="menu">
+                    <li><a href="C:\Users\Chingumbe\OneDrive\Desktop\Wani\login form in html css\index.html">Log in</a></li>
+                    <li><a href="C:\Users\Chingumbe\OneDrive\Desktop\Wani\about us.html">About Us</a></li>
+                    <li><a href="C:\Users\Chingumbe\OneDrive\Desktop\Wani\FAQ.html">FAQ</a></li>
+                    <li><a href="C:\Users\Chingumbe\OneDrive\Desktop\Wani\Pricing Table v2.html">Pricing</a></li>
+                </ul>
+             </div>
+        <div class="banner-text">
+            <h2>POWERED BY EDEN UNIVERSITY.</h2>
+            <h1>Software built for<span> Colleges and Universities</span></h1>
+            <p>Specializing in dynamic and user-friendly websites for colleges to enhance engagement and support institutional goals.</p>
+            <a href="C:\Users\Chingumbe\OneDrive\Desktop\Wani\SIGNUPjs.html" onclick="displayMessage('Sign-up button clicked!')">Sign Up</a> <!-- Updated Sign Up button -->
+            <div id="specialOffer" class="hidden">
+                <h2>Special Offer for New Users!</h2>
+                <p>Get 50% off your first subscription. Offer valid for a limited time only!</p>
+            </div>
+        
+            <!-- Button to show the special offer -->
+            <button onclick="showSpecialOffer()"><b>Click to Reveal Special Offer</b></button>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="C:\Users\Chingumbe\OneDrive\Desktop\Wani\about us.html">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="C:\Users\Chingumbe\OneDrive\Desktop\Wani\FAQ.html">FAQ</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Staff</h4>
+                    <ul>
+                        <li><a href="#">CEO: CHINGUMBE CHIYUKA</a></li>
+                        <li><a href="#">COO: MICHEAL SIMBAO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- A dynamic message area for the sign-up button 
+    <p id="messageDisplay"></p>
+
+    Hidden offer section that will be displayed dynamically 
+    <div id="specialOffer" class="hidden">
+        <h2>Special Offer for New Users!</h2>
+        <p>Get 50% off your first subscription. Offer valid for a limited time only!</p>
+    </div>
+
+     Button to show the special offer 
+    <button onclick="showSpecialOffer()"><b>Click to Reveal Special Offer</b></button>-->
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBuilder - Institution Information</title>
+    <link rel="stylesheet" href="WebBuilder1.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <form id="institution-form">
+        <label for="institution-name">Enter the name of your Institution:</label>
+        <input type="text" id="institution-name" name="institutionName" required>
+        <br>
+
+        <h3>Type of Institution</h3>
+        <label><input type="radio" name="institutionType" value="Health" required> Health</label>
+        <br>
+        <label><input type="radio" name="institutionType" value="Education"> Education</label>
+        <br>
+        <label><input type="radio" name="institutionType" value="Agriculture"> Agriculture</label>
+        <br>
+
+        <textarea name="institutionDescription" placeholder="Description of Institution" required></textarea>
+        <br>
+        <textarea name="institutionMotto" placeholder="Institution Motto" required></textarea>
+        <br>
+        <textarea name="noticeBoard" placeholder="Notice Board: e.g. Time of intake" required></textarea>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="WebBuilder1.js"></script>
+</body>
+</html>
