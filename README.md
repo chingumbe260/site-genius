@@ -5,16 +5,16 @@ This project is a simple Website Builder created during my time at Eden Universi
   Features
   
 User-friendly interface
-Institution and course management
-Media uploads
-Dynamic display pages
-Easy-to-use forms
+Institution and course management,
+Media uploads,
+Dynamic display pages,
+Easy-to-use forms.
 
   Technologies Used
   
-HTML
-CSS
-JavaScript
+HTML,
+CSS,
+JavaScript.
 
   Purpose
   
